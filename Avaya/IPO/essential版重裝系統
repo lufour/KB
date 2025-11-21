@@ -1,0 +1,6 @@
+首先，Manager有兩個版本，分爲Lite和adminCD，只有adminCD才能重裝，
+其次，一定要用Manager Format，
+最後Recreate進度條有兩個，一個是Windows的，一個是Manager的，要等到兩個跑完。
+
+IPO的OS存在SD Card中，SD Card插讀卡機接PC/NB,
+再Recreate，Recreate版本就是Manager adminCD的版本。
