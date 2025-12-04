@@ -1,0 +1,91 @@
+You need licenses to use the TAPI driver in third party mode, but you do not need licenses for first-party mode.
+
+CTI Link Pro: Enables support for third-party TAPI mode, which includes TAPILink Pro and DevLink Pro.
+
+Wave User: Enables streaming of wav files using TAPILink Pro for third party voice applications. Licenses are required for each user. TAPI wav calls use system data channels from the same pool that is used for voice mail ports.
+
+1.Enabling IP Office TAPI support
+
+About this task
+Support for TAPI is controlled by the IP Office system security settings. From IP Office Release 9.1 onwards, TAPI support is off by default.
+
+Procedure
+Start IP Office Manager.
+Select File > Advanced > Security Settings.
+Select the IP Office system and click OK.
+Enter a user name and password of a user account with security configuration access.
+Click System and select the Unsecured Interfaces tab.
+In the list of Application Controls, select the TAPI/DevLink3 option.
+The TAPI software installation also uses the TFTP Directory Read option to obtain a list of users from the IP Office system. If not enabled, the installation displays Failed to retrieve user list from IP Office. However, you can enter user details manually. If you enable TFTP Directory Read to simplify TAPI installation, you should disable the option afterwards unless it is also specifically required by the TAPI application being supported.
+
+Click OK.
+To save the updated security settings, click .
+
+
+2.Installing the software
+
+About this task
+The IP Office TAPI service provider and the DevLink files are both installed from the IP Office User CD.
+
+Procedure
+Insert the IP Office User CD and open setup.exe.
+Select the language and click Next.
+When the Welcome page is displayed, click Next.
+Enter a user and company name for the installation.
+These are used for reference only.
+
+Select whether you are installing the software for all users of the computer or only the current user.
+Click Next.
+Select the destination folder for the installation or use the default folder, and click Next.
+From the Setup Type menu, click Custom > Next.
+Select one of the following components:
+TAPI2: Installs the files for support of TAPI 2.1.
+
+TAPI3: Installs the files for support of TAPI 3.0.
+
+DevLink: DevLink is installed and used in conjunction with some third party applications.
+
+Click Next.
+Do one of the following:
+If the system displays the error message Failed to retrieve user list from IP Office, click OK and enter the required details manually.
+
+Select the IP Office system and enter the user name and password, and then click Next.
+
+The system displays a summary of what is to be installed.
+
+Click Next.
+The software installation proceeds.
+
+Select whether you want to restart the computer now or later.
+Click Finish.
+
+3.Configuring the TAPI driver
+
+About this task
+TAPI service providers are configured with Windows Control Panel.
+
+Procedure
+Start the Control Panel.
+Select Phone and Modem.
+Select the Advanced tab.
+Select Avaya IP Office TAPI Service Provider and click Configure.
+You can see separate service providers for TAPI2 and TAPI3, but they share the same IP Office settings.
+
+Enter the IP address of the IP Office control unit, in the Switch IP Address field.
+Complete one of the following:
+Single User Mode
+
+Third Party Mode
+
+Click OK and then Close.
+
+#TAPI configuration field descriptions
+
+https://documentation.avaya.com/bundle/IPOfficeTAPIInstall/page/TAPI2_configuration_field_descriptions.html
+
+4.Configuration of IP Office users for TAPI
+
+Configure IP Office for TAPI as follows:
+Configuration for TAPI monitoring: If the application monitors telephones but does not control the telephones, configuration is not necessary.
+
+Configuration for TAPI control: If the application controls telephones, configure all controlled users as off-hook stations. This causes the phone to return to the idle state when a call is hung up using TAPI. If you do not set this option, the phone remains in a disconnected state until you hang up the phone manually. You can find the Off-Hook Station check box on the Telephony tab of the user settings in Manager.
