@@ -1,7 +1,28 @@
 change station xxxx
 
-page2/
 
-call waiting indication  _n_?
+                                                            Page   2 of   4
+                                     STATION
+FEATURE OPTIONS
+           LWC Reception: spe
+          LWC Activation? y                         Coverage Msg Retrieval? y
+  LWC Log External Calls? n                                    Auto Answer: none
+             CDR Privacy? n                               Data Restriction? n
+   Redirect Notification? y                        Call Waiting Indication: y
+ Per Button Ring Control? n                   Att. Call Waiting Indication: y
+   Bridged Call Alerting? n                      Distinctive Audible Alert? y
+        Switchhook Flash? y                            Adjunct Supervision? y
+    Ignore Rotary Digits? n
+        H.320 Conversion? n          Per Station CPN - Send Calling Number?
+       Service Link Mode: as-needed
+         Multimedia Mode: basic                    Audible Message Waiting? n
+    MWI Served User Type:
+              AUDIX Name:
+                                                 Coverage After Forwarding? s
+                                                   Multimedia Early Answer? n
 
-att. call waiting indication _n_?
+ Emergency Location Ext: 2999
+
+下列兩項修改爲n
+Call Waiting Indication: y
+Att. Call Waiting Indication: y
