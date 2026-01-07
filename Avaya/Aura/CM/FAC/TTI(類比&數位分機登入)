@@ -1,0 +1,77 @@
+這個功能的用途是讓類比/數位分機模擬登入功能，實現換號碼不用改綫
+
+1.開啓TTI功能，設置一個密碼
+change system-parameters features                               Page   3 of  19
+                    FEATURE-RELATED SYSTEM PARAMETERS
+TTI/PSA PARAMETERS
+
+  WARNING!  SEE USER DOCUMENTATION BEFORE CHANGING TTI STATE
+
+        Terminal Translation Initialization (TTI) Enabled? y
+                TTI State: voice        TTI Security Code: 1234
+
+
+                         Default COR for Dissociated Sets:
+
+          Unnamed Registrations and PSA for IP Telephones? n
+               Customer Telephone Activation(CTA) Enabled? n
+
+                     Hot Desking Enhancement Station Lock? n
+
+EMU PARAMETERS
+           EMU Inactivity Interval for Deactivation(hours):
+
+CALL PROCESSING OVERLOAD MITIGATION
+           Restrict Calls: stations-first
+
+
+2.
+change feature-access-codes                                     Page   4 of  11
+                               FEATURE ACCESS CODE (FAC)
+                             Station Lock Activation:      Deactivation:
+            Station Security Code Change Access Code:
+                    Station User Admin of FBI Assign:      Remove:
+        Station User Button Ring Control Access Code:
+                   Terminal Dial-Up Test Access Code:
+      Terminal Translation Initialization Merge Code: *111 Separation Code: *112
+                  Transfer to Voice Mail Access Code:
+                Trunk Answer Any Station Access Code:
+                    User Control Restrict Activation:      Deactivation:
+        Voice Coverage Message Retrieval Access Code:
+       Voice Principal Message Retrieval Access Code:
+                 Whisper Page Activation Access Code: *888
+           3PCC H323 Override SIP Station Activation:      Deactivation:
+
+          PIN Checking for Private Calls Access Code:
+PIN Checking for Private Calls Using ARS Access Code:
+PIN Checking for Private Calls Using AAR Access Code:
+
+
+3.建立一個port：X的分機號碼
+change station 1999                                             Page   1 of   5
+                                     STATION
+
+Extension: 1999                          Lock Messages? n               BCC: 0
+     Type: 9408                          Security Code:                  TN: 1
+     Port: X                           Coverage Path 1:                COR: 12
+     Name: kallen3                     Coverage Path 2:                 COS: 2
+Unicode Name? y                     Hunt-to Station:
+STATION OPTIONS
+                                           Time of Day Lock Table:
+              Loss Group: 2          Personalized Ringing Pattern: 1
+                                             Message Lamp Ext: 1999
+            Speakerphone: 2-way               Mute Button Enabled? y
+        Display Language: english                  Button Modules: 0
+
+          Survivable COR: internal
+   Survivable Trunk Dest? y                          IP SoftPhone? n
+                                              Remote Office Phone? n
+                                                         IP Video? n
+
+
+                                              Customizable Labels? y
+
+4.使用
+
+登入 *111+密碼1234+分機號碼1999(會將1999的port:X改爲插話機的實體位置)
+登出 *112+密碼1234(會將實體位置原來分機號碼的port重新改爲X)
