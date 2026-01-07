@@ -1,0 +1,25 @@
+change location-parameters 
+                              LOCATION PARAMETERS
+
+                                              Long Distance Access Code:
+       Analog Ringing Cadence: 1              International Access Code:
+     Analog Line Transmission: 1               Local E.164 Country Code:
+                                     Off-PBX Feature Name Extension Set:
+                                                        Companding Mode: A-Law
+
+     Time Format on Terminals: based-on-language
+                   Replace International Access Code with '+': no
+            Convert ISDN Numbers to International for Display: no
+
+RECALL TIMING
+           Flashhook Interval? y                     Upper Bound (msec): 300
+                                                     Lower Bound (msec): 250
+                    Forward Disconnect Timer (msec): 600
+                          MF Interdigit Timer (sec): 10
+        Outgoing Shuttle Exchange Cycle Timer (sec): 4
+
+                        End OCM After Answer (msec):
+
+修改如下
+Upper Bound (msec): 300
+Lower Bound (msec): 250
