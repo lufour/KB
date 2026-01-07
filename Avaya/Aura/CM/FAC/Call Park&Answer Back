@@ -1,0 +1,32 @@
+駐留&取回
+
+change feature-access-codes                                     Page   1 of  11
+                               FEATURE ACCESS CODE (FAC)
+         Abbreviated Dialing List1 Access Code: *000
+         Abbreviated Dialing List2 Access Code:
+         Abbreviated Dialing List3 Access Code:
+Abbreviated Dial - Prgm Group List Access Code:
+                      Announcement Access Code: *987
+                       Answer Back Access Code: *999
+                         Attendant Access Code:
+      Auto Alternate Routing (AAR) Access Code:
+    Auto Route Selection (ARS) - Access Code 1:       Access Code 2:
+                 Automatic Callback Activation:        Deactivation:
+Call Forwarding Activation Busy/DA:        All: *777   Deactivation: #777
+   Call Forwarding Enhanced Status:        Act:        Deactivation:
+                         Call Park Access Code:
+                       Call Pickup Access Code: *778
+CAS Remote Hold/Answer Hold-Unhold Access Code:
+                  CDR Account Code Access Code:
+                        Change COR Access Code:
+                   Change Coverage Access Code:
+            Conditional Call Extend Activation:        Deactivation:
+                   Contact Closure   Open Code:          Close Code:
+
+駐留:
+Call Pickup Access Code: *778
+使用:通話中→轉接→*778→聽到三響→可以挂斷
+
+取回:
+Answer Back Access Code: *999
+使用:拿起聽筒→*999→輸入駐留的人的號碼→取回通話
