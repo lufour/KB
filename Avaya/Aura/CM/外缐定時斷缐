@@ -1,7 +1,30 @@
 change cor x
 
-page2
+page3
 
+                              CLASS OF RESTRICTION
+
+                           ERASE 24XX/14XX/94XX USER DATA UPON
+            Dissociate or unmerge this phone: none
+           EMU login or logoff at this phone: none
+            Mask CPN/NAME for Internal Calls? n
+        Allow Agent to Activate Call Forward? n
+               SAC/CF Override by   Team Btn? n  Priority Call? n  Dialing? n
+   SAC/CF Override Protection for   Team Btn? n  Priority Call? n  Dialing? n
+
+
+
+                         one-X Server Access? y
+Team Btn  Silent if Active? n  Priority Ring? n
+Team Btn  Display Name? n      Pick Up by Going Off Hook? n
+Listen Only Talk Path on Auto Answered Intercom Calls? n
+   Outgoing Trunk Disconnect Timer (minutes):    
+     Outgoing Trunk Alerting Timer (minutes):      Internal Users Only? n
+       Allow Trunk Seizure on Busy Indicator? y
+
+
+
+Outgoing Trunk Disconnect Timer (minutes):
 只能控制内撥外
-
+2-90 分鐘
 外撥内不能時控
