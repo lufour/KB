@@ -1,0 +1,64 @@
+1.
+change node-names ip 
+
+    Name              IP Address
+
+SMDR1               192.168.16.243
+
+2.
+change ip-services                                              Page   1 of   4
+
+                                   IP SERVICES
+ Service     Enabled     Local        Local       Remote      Remote    TLS
+  Type                   Node         Port        Node        Port   Encryption
+CDR1                 procr            0       SMDR1           9600       n
+
+3.
+change system-parameters cdr                                    Page   1 of   2
+                            CDR SYSTEM PARAMETERS
+ Node Number (Local PBX ID):                       CDR Date Format: month/day
+      Primary Output Format: customized    Primary Output Endpoint: CDR1
+    Secondary Output Format:
+       CDR Retention (days): 20
+           Use ISDN Layouts? n                   Enable CDR Storage on Disk? n
+       Use Enhanced Formats? n      Condition Code 'T' For Redirected Calls? n
+     Use Legacy CDR Formats? y                  Remove # From Called Number? n
+Modified Circuit ID Display? n                             Intra-switch CDR? y
+                  Record Outgoing Calls Only? n     Outg Trk Call Splitting? y
+  Suppress CDR for Ineffective Call Attempts? y       Outg Attd Call Record? y
+      Disconnect Information in Place of FRL? n      Interworking Feat-flag? n
+ Force Entry of Acct Code for Calls Marked on Toll Analysis Form? n
+                                    Calls to Hunt Group - Record: member-ext
+Record Called Vector Directory Number Instead of Group or Member? n
+Record Agent ID on Incoming? n       Record Agent ID on Outgoing? y
+     Inc Trk Call Splitting? n
+  Record Non-Call-Assoc TSC? n           Call Record Handling Option: warning
+      Record Call-Assoc TSC? n   Digits to Record for Outgoing Calls: dialed
+   Privacy - Digits to Hide: 0               CDR Account Code Length: 15
+Remove '+' from SIP Numbers? y                           Record UCID? n
+
+4.unisoon規格
+change system-parameters cdr                                    Page   2 of   2
+                            CDR SYSTEM PARAMETERS
+
+     Data Item - Length         Data Item - Length         Data Item - Length
+ 1: date             - 6   17: code-dial        - 4   33:                  -
+ 2: space            - 1   18: space            - 1   34:                  -
+ 3: time             - 4   19: code-used        - 4   35:                  -
+ 4: space            - 1   20: space            - 1   36:                  -
+ 5: sec-dur          - 5   21: out-crt-id       - 3   37:                  -
+ 6: space            - 1   22: space            - 1   38:                  -
+ 7: cond-code        - 1   23: in-trk-code      - 4   39:                  -
+ 8: space            - 1   24: space            - 1   40:                  -
+ 9: clg-num/in-tac   - 15  25: in-crt-id        - 3   41:                  -
+10: space            - 1   26: space            - 1   42:                  -
+11: dialed-num       - 20  27: feat-flag        - 1   43:                  -
+12: space            - 1   28: space            - 1   44:                  -
+13: frl              - 1   29: attd-console     - 2   45:                  -
+14: space            - 1   30: return           - 1   46:                  -
+15: auth-code        - 13  31: line-feed        - 1   47:                  -
+16: space            - 1   32:                  -     48:                  -
+
+                              Record length = 102
+
+
