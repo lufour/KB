@@ -1,0 +1,26 @@
+add personal-CO-line n（1-200）
+
+                            PERSONAL CO LINE GROUP
+
+ Group Number: 1                    Group Type: co             CDR Reports? y
+   Group Name: OUTSIDE CALL                                            TAC:
+Security Code:                   Coverage Path:           Data Restriction? n
+                              Outgoing Display? n
+
+TRUNK PARAMETERS
+                 Trunk Type:                        Trunk Direction: two-way
+                 Trunk Port:                Disconnect Timing(msec): 500
+                 Trunk Name:                      Trunk Termination: rc
+         Outgoing Dial Type: tone                 Analog Loss Group: 6
+                   Prefix-1? y                   Digital Loss Group: 11
+Disconnect Supervision - In? y                      Call Still Held? n
+ Answer Supervision Timeout: 10          Receive Answer Supervision? n
+                 Trunk Gain: high                           Country: 1
+          Charge Conversion: 1
+              Decimal Point: none
+            Currency Symbol:
+                Charge Type: units
+
+必填 TAC/Trunk type/Trunk port 
+Group Name根據需要修改
+後續配合button使用
