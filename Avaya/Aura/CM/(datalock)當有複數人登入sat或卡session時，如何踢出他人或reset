@@ -1,3 +1,16 @@
 在sat中
-status logins會看到session id
+
+status logins會看到session id和正在用的command
+
+status logins
+
+                    COMMUNICATION MANAGER LOGIN INFORMATION
+
+Login     Profile   User's Address       Active Command               Session
+
+*cust        18                        stat logins                       1
+                     192.168.12.38
+
+
+
 再reset login-ID n(session id)
