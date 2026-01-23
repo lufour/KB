@@ -5,6 +5,6 @@
 IPO的OS存在SD Card中，SD Card插讀卡機接PC/NB,
 先format再Recreate，Recreate版本就是Manager adminCD的版本。
 
-.cfg 存在 IPO500V2 
+.cfg/LAN1&LAN2的IP資訊都存在 IPO500V2 機櫃而不是sd card
 
 
