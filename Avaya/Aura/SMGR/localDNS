@@ -1,0 +1,4 @@
+1.檢查localDNS
+>cat /etc/hosts
+
+2.
