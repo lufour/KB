@@ -1,0 +1,24 @@
+cust >changeIPFQDN -h
+[sudo] password for cust:
+ Usage: changeIPFQDN -IP <> -FQDN <> -GATEWAY <> -NETMASK <> -DNS <> -SEARCH <>  -IPV6 <> -IPV6GW <> -IPV6PREFIX <>
+        The script changes the IP/FQDN/GATEWAY/NETMASK/DNS/SEARCH List of the system.
+        If the script is run from a putty session the session might get terminated once the network service is re-started
+        -IP          New IP address for System Manager
+        -FQDN        New FQDN for System Manager
+        -GATEWAY     New Gateway address for System Manager
+        -NETMASK     New Netmask address for System Manager
+        -DNS         New DNS address for System Manager [Multiple IP's separated by , ]
+        -SEARCH      New Search List for DNS
+        -IPV6        New IPV6 Address
+        -IPV6GW      New IPV6 Gateway Address
+        -IPV6PREFIX  New IPV6 Prefix. Defaults to 64
+ Example:
+        changeIPFQDN -IP 10.11.y.z -FQDN a.domain.smgr.com -GATEWAY 10.11.1.1 -NETMASK 255.255.255.0 -DNS 10.11.1.2 -SEARCH smgr.com
+        changeIPFQDN -FQDN a.domain.smgr.com -GATEWAY 10.11.1.1
+        changeIPFQDN -IP 10.11.y.z
+        changeIPFQDN -IPV6 2001:b00d:dead:1111:1111:1111:1234:8080 -IPV6GW 2001:b00d::1 -IPV6PREFIX 64
+
+
+        Contact Avaya Support for further assistance.
+
+        Note: The above command will override any previous network entries.
