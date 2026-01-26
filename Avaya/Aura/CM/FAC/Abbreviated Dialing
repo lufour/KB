@@ -1,0 +1,25 @@
+change feature-access-codes                                     Page   1 of  11
+                               FEATURE ACCESS CODE (FAC)
+         Abbreviated Dialing List1 Access Code: *000
+         Abbreviated Dialing List2 Access Code:
+         Abbreviated Dialing List3 Access Code:
+
+一個user可以設定3個速撥群組，每個群組根據種類不同分別最多容納100和1000個號碼。
+
+change station 1888                                             Page   4 of   5
+                                     STATION
+ SITE DATA
+       Room:                                            Headset? n
+       Jack:                                            Speaker? n
+      Cable:                                           Mounting: d
+      Floor:                                        Cord Length: 0
+   Building:                                          Set Color:
+
+ABBREVIATED DIALING
+     List1: system             List2: enhanced  1        List3: group    1
+
+三個list分別對應三個FAC,以上述例子，*000會對應到 List1: system 
+
+
+
+
