@@ -1,0 +1,15 @@
+change feature-access-codes 
+
+
+  Automatic Callback Activation: xxx       Deactivation: xxx
+
+
+此功能在撥號對象busy時提供自動撥號功能
+
+類比電話使用流程舉例：
+1.A撥打B,B忙綫。
+2.A聽到busy tone，按下轉接，輸入功能碼xxx。
+3.A聽到三聲嘟嘟嘟確認音，可以挂上聽筒。
+4.此時B通話結束。
+5.系統撥號給A，A接起時，從A自動撥號給B。
+
