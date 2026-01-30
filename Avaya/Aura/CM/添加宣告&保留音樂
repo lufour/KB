@@ -1,0 +1,77 @@
+avaya所有的宣告與保留音樂都以號碼存在，規劃dial plan時請注意留夠充足系統號碼區間
+
+change media-gateway 1                                          Page   2 of   2
+                             MEDIA GATEWAY 1
+
+                                 Type: g450
+
+Slot   Module Type            Name                    DSP Type  FW/HW version
+ V1:   S8300                  ICC MM
+ V2:   MM710                  DS1 MM
+ V3:
+ V4:
+ V5:   MM717                  DCP MM
+ V6:   MM711                  ANA MM
+ V7:
+ V8:                                                Max Survivable IP Ext: 8
+ V9:   gateway-announcements  ANN VMM
+
+請注意V9，衆所周知G450只有8個slot，V9作爲一個虛擬槽位存語音，需要自己手動添加
+
+enable announcement-board 2v9
+
+enable filexfer                                                 Page   1 of   1
+
+
+                                 ENABLE FILE TRANSFER
+
+                    Login: avaya
+                 Password:
+         Reenter Password:
+                   Secure? n
+            Board address: 2v9
+
+基本只要注意secure？改爲n
+賬號密碼全部自定義，後續ftp使用
+
+add announcement 4402                                           Page   1 of   1
+
+                       ANNOUNCEMENTS/AUDIO SOURCES
+
+  Extension: 4402                            COR: 1
+  Annc Name: hello                            TN: 1
+  Annc Type: integrated                    Queue? y
+     Source: 2v9
+  Protected? n                              Rate: 64
+
+add announcement 4403                                           Page   1 of   1
+
+                       ANNOUNCEMENTS/AUDIO SOURCES
+
+  Extension: 4403                            COR: 1
+  Annc Name: holdOnMusic                      TN: 1
+  Annc Type: integ-mus                     Queue? b
+     Source: 2v9
+  Protected? n                              Rate: 64
+
+4402作爲一般宣告語音用，4403作爲保留音樂，名稱必須與ftp到g450中的檔案一致，
+音檔格式：wav,16bit,8000hz,mono
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
