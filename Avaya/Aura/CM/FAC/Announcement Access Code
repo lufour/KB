@@ -1,0 +1,59 @@
+change feature-access-codes                                     Page   1 of  11
+                               FEATURE ACCESS CODE (FAC)
+         Abbreviated Dialing List1 Access Code: *000
+         Abbreviated Dialing List2 Access Code:
+         Abbreviated Dialing List3 Access Code:
+Abbreviated Dial - Prgm Group List Access Code:
+                      Announcement Access Code: *987
+                       Answer Back Access Code: *999
+                         Attendant Access Code:
+      Auto Alternate Routing (AAR) Access Code:
+    Auto Route Selection (ARS) - Access Code 1:       Access Code 2:
+                 Automatic Callback Activation:        Deactivation:
+Call Forwarding Activation Busy/DA:        All: *777   Deactivation: #777
+   Call Forwarding Enhanced Status:        Act:        Deactivation:
+                         Call Park Access Code:
+                       Call Pickup Access Code: *778
+CAS Remote Hold/Answer Hold-Unhold Access Code:
+                  CDR Account Code Access Code:
+                        Change COR Access Code:
+                   Change Coverage Access Code:
+            Conditional Call Extend Activation:        Deactivation:
+                   Contact Closure   Open Code:          Close Code:
+
+本案例功能碼為*987，此功能用於話機錄製宣告語音
+
+change cos                                                      Page   1 of   2
+CLASS OF SERVICE
+
+                                0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15
+ Auto Callback                  n  y  y  n  y  n  y  n  y  n  y  n  y  n  y  n
+ Call Fwd-All Calls             n  y  n  y  y  n  n  y  y  n  n  y  y  n  n  y
+ Data Privacy                   n  y  n  n  n  y  y  y  y  n  n  n  n  y  y  y
+ Priority Calling               n  y  n  n  n  n  n  n  n  y  y  y  y  y  y  y
+ Console Permissions            n  n  y  n  n  n  n  n  n  n  n  n  n  n  n  n
+ Off-hook Alert                 n  n  n  n  n  n  n  n  n  n  n  n  n  n  n  n
+ Client Room                    n  n  n  n  n  n  n  n  n  n  n  n  n  n  n  n
+ Restrict Call Fwd-Off Net      y  n  y  y  y  n  y  y  y  y  y  y  y  y  y  y
+ Call Forwarding Busy/DA        n  n  n  n  n  n  n  n  n  n  n  n  n  n  n  n
+ Personal Station Access (PSA)  n  n  n  n  n  n  n  n  n  n  n  n  n  n  n  n
+ Extended Forwarding All        n  y  n  n  n  n  n  n  n  n  n  n  n  n  n  n
+ Extended Forwarding B/DA       n  y  n  n  n  n  n  n  n  n  n  n  n  n  n  n
+ Trk-to-Trk Transfer Override   y  y  y  n  n  y  n  n  n  n  n  n  n  n  n  n
+ QSIG Call Offer Originations   n  n  n  n  n  n  n  n  n  n  n  n  n  n  n  n
+ Contact Closure Activation     n  n  n  n  n  n  n  n  n  n  n  n  n  n  n  n
+
+要使用功能碼錄製語音之cos需開啓Console Permissions，如cos2
+
+使用方法
+
+*987+ Announcement extension number
+
+1聼  2錄 #結束錄音
+
+如果錄製正常，直接撥Announcement extension number就會聽到你的錄音
+
+
+
+
+
