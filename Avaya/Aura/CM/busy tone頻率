@@ -1,0 +1,20 @@
+change tone-generation                                          Page   2 of  21
+                       TONE GENERATION CUSTOMIZED TONES
+
+        Tone Name        Cadence        Tone
+                          Step    (Frequency/Level)
+    busy                    1:     480+620/-13.0      Duration(msec): 250
+                            2:     silence            Duration(msec): 250
+                            3:     goto                         Step: 1
+                            4:
+                            5:
+                            6:
+                            7:
+                            8:
+                            9:
+                           10:
+                           11:
+                           12:
+                           13:
+                           14:
+                           15:
