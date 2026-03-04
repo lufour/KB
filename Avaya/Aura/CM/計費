@@ -37,7 +37,7 @@ Record Agent ID on Incoming? n       Record Agent ID on Outgoing? y
    Privacy - Digits to Hide: 0               CDR Account Code Length: 15
 Remove '+' from SIP Numbers? y                           Record UCID? n
 
-4.unisoon規格
+4.創訊計費規格
 change system-parameters cdr                                    Page   2 of   2
                             CDR SYSTEM PARAMETERS
 
