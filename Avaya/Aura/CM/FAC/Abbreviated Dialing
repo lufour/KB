@@ -20,6 +20,33 @@ ABBREVIATED DIALING
 
 三個list分別對應三個FAC,以上述例子，*000會對應到 List1: system 
 
+建立簡碼指令為一下
+change abbreviated-dialing system                               Page   1 of   7
+                        ABBREVIATED DIALING LIST
+                                SYSTEM LIST
+
+Size (multiple of 5): 100     Privileged? n     Label Language:user-defined
+DIAL CODE                             LABELS (FOR STATIONS THAT DOWNLOAD LABELS)
+     01: 00966691249                        01: carlos
+     02: *002                               02: *************
+     03: *003                               03: *************
+     04: *004                               04: *************
+     05: 2157                               05: *************
+     06:                                    06: *************
+     07:                                    07: *************
+     08: 1000                               08: ABST
+     09:                                    09: *************
+     10:                                    10: *************
+     11:                                    11: *************
+     12:                                    12: *************
+     13:                                    13: *************
+     14:                                    14: *************
+     15:                                    15: *************
+
+Size可以調整數量，default是5筆
+
+
+
 
 
 
