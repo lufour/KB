@@ -1,0 +1,41 @@
+>display system-parameters customer-options
+Multiple Locations? y
+Uniform Dialing Plan? y
+
+>change locations                                                Page   1 of   1
+                                   LOCATIONS
+
+                ARS Prefix 1 Required For 10-Digit NANP Calls? y
+
+Loc  Name          Timezone DST     City/ ARS Atd      Disp   Prefix   Proxy Sel
+ No                 Offset          Area  FAC FAC      Parm              Rte Pat
+1    823             + 00:00  0                        1  823
+2    824             + 00:00  0                        1  824
+3                        :
+4                        :
+5                        :
+6                        :
+7                        :
+8                        :
+9                        :
+
+>change dialplan analysis
+ 823           7  ext
+ 824           7  ext
+ 1             4  udp
+ 2             4  udp
+
+>change uniform-dialplan 0                                       Page   1 of   2
+                       UNIFORM DIAL PLAN TABLE
+                                                              Percent Full: 0
+
+  Matching                       Insert                Node
+  Pattern           Len Del      Digits       Net Conv Num
+ 1                  4   0     L3              ext n
+ 2                  4   0     L3              ext n
+
+
+8231000與8232000 互相只要撥後4碼
+8241000與8242000 互相只要撥後4碼
+823xxxx與824xxxx 互相要撥全7碼
+
