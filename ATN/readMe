@@ -1,1 +1,4 @@
-
+總結最近出現的問題
+1.出現station可以直撥，但是aa無法轉接，在cm busyout/release station xxxx (新達電廠)
+2.enhanced call forward會導致hunting group busy(口袋證券)
+3.中華電信的vpn可以設定mac table上限，出現部分設備網路不通，拔掉一台其他設備又恢復正常，可以詢問中華電信是不是mac table上限設定太少了(資通院台南)
