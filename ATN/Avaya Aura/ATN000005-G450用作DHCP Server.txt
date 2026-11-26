@@ -1,0 +1,98 @@
+login as: root
+Pre-authentication banner message from server:
+| This system is restricted solely to authorized users for legitimate business
+| purposes only. The actual or attempted unauthorized access, use or modificati
+> ons
+| of this system is strictly prohibited. Unauthorized users are subject to
+| company disciplinary procedures and or criminal and civil penalties under sta
+> te,
+| federal or other applicable domestic and foreign laws.
+|
+| The use of this system may be monitored and recorded for administrative and
+| security reasons. Anyone accessing this system expressly consents to such
+| monitoring and recording, and is advised that if it reveals possible evidence
+| of criminal activity, the evidence of such activity may be provided to law
+| enforcement officials.
+|
+| All users must comply with all corporate instructions regarding the protectio
+> n
+| of information assets.
+End of banner message from server
+Keyboard-interactive authentication prompts from server:
+| Password:
+End of keyboard-interactive prompts from server
+
+
+
+
+Last login: 23-Nov-2026 09:51:48
+
+Survivable-call-engine is disabled
+
+G450-001(super)# ip dhcp pool 1
+G450-001(super-DHCP 1)# name "Avaya Phone"
+Done!
+G450-001(super-DHCP 1)# start-ip-addr 10.103.10.175
+Done!
+G450-001(super-DHCP 1)# end-ip-addr 10.103.10.176
+Done!
+G450-001(super-DHCP 1)# subnet-mask 255.255.255.0
+Done!
+G450-001(super-DHCP 1)# default-router 192.168.16.1
+Done!
+G450-001(super-DHCP 1)# default-router 10.103.10.254
+Done!
+G450-001(super-DHCP 1)# option 242
+G450-001(super-DHCP 1/option 242)# name "Avaya Phone Option"
+Done!
+G450-001(super-DHCP 1/option 242)# value ascii "HTTPSRVR=10.103.10.169"
+Done!
+G450-001(super-DHCP 1/option 242)# exit
+G450-001(super-DHCP 1)# exit
+G450-001(super)# ip dhcp activate pool 1
+Done!
+G450-001(super)# ip dhcp-server
+Done!
+G450-001(super)# show ip dhcp-pool all detailed
+Index           Name
+-------       ------------------
+1             Avaya Phone
+
+Mode:                   Active
+Start IP Address Range: 10.103.10.175
+End IP Address Range:   10.103.10.176
+Lease Time:             8 days 0 hours 0 minutes 0 seconds
+BootFile:               N/A
+Next-Server:            N/A
+Client-Identifier:      N/A
+Server-Name:            N/A
+
+DHCP options
+Option Num               1                Name     subnet-mask
+Value                    255.255.255.0
+
+Option Num               3                Name     default-router
+Value                    10.103.10.254
+
+Option Num               242              Name     Avaya Phone Option
+Value                    HTTPSRVR=10.103.10.169
+
+
+G450-001(super)# show ip dhcp-server bindings
+There is currently no active binding.
+
+G450-001(super)# show ip dhcp-server statistics
+Counter                Value
+--------------         ----------
+BOOTP Requests         0
+DHCP  Discover         0
+DHCP  Requests         0
+DHCP  Declines         0
+DHCP  Releases         0
+DHCP  Informs          0
+
+BOOTP Replies          0
+DHCP  Offers           0
+DHCP  Acks             0
+DHCP  Nacks            0
+G450-001(super)#
